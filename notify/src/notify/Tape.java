@@ -15,10 +15,10 @@ public class Tape implements Runnable{
 		
 		try {
 			System.out.println("Working...");
-			Thread.sleep(5000);
-			System.out.println("Can I finish?");
-			this.waiting = true;
+			Thread.sleep(2000);
 			synchronized (monitor) {
+				this.waiting = true;
+				System.out.println("Can I finish?");
 				monitor.wait();
 			}
 			System.out.println("Thank you :*");

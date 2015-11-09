@@ -10,7 +10,7 @@ public class Main {
 		thread.start();
 		try {
 			while (tape.waiting != true) {
-				Thread.sleep(4000);
+				Thread.sleep(1000);
 			}
 			synchronized (monitor) {
 				System.out.println("Yes you can :P");
