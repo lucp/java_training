@@ -4,6 +4,7 @@ public class Head {
 
 	public static void main(String[] args) {
 		
+		/*Typical join*/
 		Tape tape = new Tape();
 		Thread thread = new Thread(tape, "tape");
 		thread.start();
@@ -13,7 +14,7 @@ public class Head {
 			e.printStackTrace();
 		}
 		System.out.println("end");
-		
+        
 	}
 	
 }

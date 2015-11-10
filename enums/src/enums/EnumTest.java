@@ -1,6 +1,6 @@
 package enums;
 
-public enum enumTest {
+public enum EnumTest {
 
 	first,
 	second

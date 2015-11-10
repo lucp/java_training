@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		First f = new Second();
+		First f = new Second(1, 2, 3);
 		Second s = (Second)f;
 		First t = new Third();
 		
