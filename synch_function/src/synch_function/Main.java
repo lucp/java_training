@@ -7,7 +7,7 @@ public class Main {
 		System.out.println("Starting all...");
 		SynchFunctionClass sfc = new SynchFunctionClass();
 		Thread thread = new Thread(sfc, "SynchFunctionClass");
-		thread.run();
+		thread.start();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
